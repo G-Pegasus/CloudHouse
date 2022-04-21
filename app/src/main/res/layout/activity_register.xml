@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/register_background"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:background="@mipmap/register_back">
+
+        <ImageView
+            android:id="@+id/register_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/logo_2"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:id="@+id/user_name_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_logo"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/todo"
+                android:src="@mipmap/register_icon_1" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/cut_line"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/user_name_edit"
+                android:layout_width="200dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:inputType="text"
+                android:hint="@string/input_username"
+                android:textColor="#596271"
+                android:ems="10"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_register_first"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#929292"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/user_name_second">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_register_first"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/register_icon_2"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/cut_line"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/phone_num_edit"
+                android:layout_width="200dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:hint="@string/admin"
+                android:textColor="#596271"
+                android:inputType="text"
+                android:ems="10"
+                android:textSize="12sp"
+                tools:ignore="TextFields" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_register_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#929292"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/password">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_register_second"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/register_icon_3"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/cut_line"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/password_edit"
+                android:layout_width="200dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:hint="@string/password"
+                android:textColor="#596271"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_register_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#929292"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/register_password">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/register_password_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_register_third"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/register_icon_4"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/cut_line"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/password_edit_again"
+                android:layout_width="200dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:hint="@string/input_password_again"
+                android:textColor="#596271"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_register_forth"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#929292"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/register_password_again">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/register_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_register_forth"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/register_icon_5"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="5dp"
+                android:background="@mipmap/cut_line"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:id="@+id/code_edit"
+                android:layout_width="140dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="2dp"
+                android:background="@null"
+                android:hint="@string/input_code"
+                android:textColor="#596271"
+                android:inputType="text"
+                android:ems="10"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/verification_code_image"
+            android:layout_width="63dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/view_register_forth"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/view_register_forth"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/image_shape"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"/>
+
+        <View
+            android:id="@+id/view_register_fifth"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#929292"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="100dp"
+            android:layout_below="@+id/register_verification_code">
+
+        </View>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/view_register_fifth"
+            android:background="@drawable/btn_selector"
+            android:text="@string/register"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/btn_register">
+
+            <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agree_register"
+                android:textSize="13sp"
+                android:textColor="#596271"
+                android:layout_marginStart="6dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

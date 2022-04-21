@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoeCabinetActivity"
+    android:background="@mipmap/shoe_background">
+
+    <TextView
+        android:id="@+id/shoe_cabinet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoe_cabinet"
+        android:textSize="48sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textColor="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="323dp"
+        android:layout_height="422dp"
+        android:background="@mipmap/shoe_back"
+        android:layout_below="@id/shoe_cabinet_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp">
+
+        <LinearLayout
+            android:id="@+id/shoes_first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="101dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/shoe_1"
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:src="@mipmap/shoe_1"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/shoe_2"
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:src="@mipmap/shoe_2"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"/>
+
+            <ImageView
+                android:id="@+id/shoe_3"
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:src="@mipmap/shoe_3"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shoes_second_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shoes_first_line"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:src="@mipmap/shoe_4"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="15dp"
+                android:src="@mipmap/add_second"
+                android:contentDescription="@string/todo"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
